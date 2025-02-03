@@ -68,8 +68,82 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัวและเมนูอาหาร</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #b82424;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fc7070;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
 
+    <h2>ข้อมูลส่วนตัว</h2>
+    <table>
+        <tr>
+            <th>ข้อมูล</th>
+            <th>รายละเอียด</th>
+        </tr>
+        <tr>
+            <td>ชื่อ</td>
+            <td>คุณากร มะซอ</td>
+        </tr>
+        <tr>
+            <td>อายุ</td>
+            <td>19 ปี</td>
+        </tr>
+        <tr>
+            <td>อาชีพ</td>
+            <td>นักศึกษา</td>
+        </tr>
+        <tr>
+            <td>ที่อยู่</td>
+            <td>สมุทรปราการ ต.บางเพรียง อ.บ่างบ่อ 10560</td>
+        </tr>
+    </table>
+
+    <h2>เมนูอาหาร</h2>
+    <ul>
+        <li>ไก่ย่าง</li>
+        <li>ไก่ย่าง</li>
+        <li>ไก่ย่าง</li>
+        <li>ไก่ย่าง</li>
+        <li>ไก่ย่าง</li>
+    </ul>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/d49aff42-753a-4cc4-aa6a-743e77bc2e37)
 
