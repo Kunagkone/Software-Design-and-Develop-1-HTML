@@ -31,9 +31,62 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #564e4e;
+        }
+        hr {
+            border: 1px solid #b46868;
+            margin: 20px 0;
+        }
+        p {
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>แนะนำตัวเอง</h1>
+    <hr>
+    
+    <h2>ชื่อ-นามสกุล</h2>
+    <p>คุณากร มะซอ</p>
+    
+    <hr>
+    
+    <h2>ประวัติการศึกษา</h2>
+    <p>ระดับมัธยมศึกษา: โรงเรียนตัวอย่าง จังหวัดกรุงเทพมหานคร</p>
+    <p>ระดับปริญญาตรี: มหาวิทยาลัยพระจอมเกล้าเจ้าคุณทหารลาดกระบัง คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาคอมพิวเตอร์</p>
+    
+    <hr>
+    
+    <h2>งานอดิเรก</h2>
+    <p>- เล่นเกม นอน เดินเล่น</p>
+    
+    
+    <hr>
+    
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>อยากจะเป็นครูที่ธรรมดาใช้ชีวิตแบบพอเพียงอยู่กับนักเรียน และสอนการใช้ชีวิตให้ถูกต้องแก่นักเรียน</p>
+    
+    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/f50bf6ef-6f2e-4a5e-971a-a66bd9b70bbd)
 
 
