@@ -165,10 +165,121 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            width: 200px;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            margin-top: 5px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>แกลเลอรีสินค้า</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/gallery/item1.jpg" onclick="openModal(this)" alt="สินค้า 1">
+            <div class="caption">หนังสือมายคราฟ
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/item2.jpg" onclick="openModal(this)" alt="สินค้า 2">
+            <div class="caption">หนังสือโปเกม่อน</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/item3.jpg" onclick="openModal(this)" alt="สินค้า 3">
+            <div class="caption">หนังสือคุกกี้รัน </div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/item4.jpg" onclick="openModal(this)" alt="สินค้า 4">
+            <div class="caption">หนังสือความรู้ทั่วไป</div>
+        </div>
+    </div>
+    
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modalImg">
+    </div>
+    
+    <a href="#top" class="back-to-top">กลับด้านบน</a>
+    
+    <script>
+        function openModal(img) {
+            document.getElementById("imageModal").style.display = "flex";
+            document.getElementById("modalImg").src = img.src;
+        }
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/623a48ff-0b2c-4b8e-86f7-84081d133e92)
 
 
 
