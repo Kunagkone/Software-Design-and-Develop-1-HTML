@@ -224,10 +224,112 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            max-width: 500px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+        <h2>สมัครสมาชิก</h2>
 
+        <!-- ข้อมูลส่วนตัว -->
+        <label for="fullname">ชื่อ-นามสกุล:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="dob">วันเกิด:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">เพศ:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+        </select>
+
+        <!-- ข้อมูลการติดต่อ -->
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">เบอร์โทร:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">ที่อยู่จัดส่ง:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <!-- รูปโปรไฟล์ -->
+        <label for="profile">อัปโหลดรูปโปรไฟล์:</label>
+        <input type="file" id="profile" name="profile" accept="image/*">
+
+        <!-- การยืนยันรหัสผ่าน -->
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <!-- ความสนใจในหมวดหมู่สินค้า -->
+        <label>ความสนใจในหมวดหมู่สินค้า:</label>
+        <input type="checkbox" name="interests" value="electronics"> อิเล็กทรอนิกส์
+        <input type="checkbox" name="interests" value="fashion"> แฟชั่น
+        <input type="checkbox" name="interests" value="home"> เครื่องใช้ในบ้าน
+        <input type="checkbox" name="interests" value="sports"> กีฬา
+
+        <!-- การยอมรับเงื่อนไขการใช้งาน -->
+        <label>
+            <input type="checkbox" name="terms" required> ฉันยอมรับ <a href="#">เงื่อนไขการใช้งาน</a>
+        </label>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/df75ba33-5fb5-4ad3-89cd-7508d7e02c00)
 
 
 
